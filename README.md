@@ -16,6 +16,8 @@ Reconnaissance, also known as the preparatory phase, is where the hacker gathers
 
 For every penetration tester, Google should be the first tool to use for continuous cyber recon. Google and other search engines like Bing are vital during reconnaissance because it provides vital data about individuals, companies, and data including leaked content. The obtained information is free and can help to determine the direction a penetration tester will take. 
 
+For more details visit : https://www.google.com/
+
 --------------------------------------------
 
 2) Maltego CE
@@ -192,7 +194,17 @@ At this point the installation is complete and the application can be started fr
 
 $ ./recon-ng
 
-![rekon_ng_bg_cyber](https://user-images.githubusercontent.com/106522935/174526568-a026c582-4a05-4d4f-8a55-6c0e60d1c74d.jpg)
-
 NOTE: If you are using Kali Linux you can start the application manually by typing recon-ng in your terminal or from the Information Gathering module which is present on the Applications tab.
 
+--------------------------------------------
+
+4) Shodan
+
+![shodan-frontpage](https://user-images.githubusercontent.com/106522935/174528233-ae8a0852-065f-43fe-860b-af2717705111.png)
+
+
+Shodan is among the first search engines for internet-connected devices. With servers located all over the world, it provides real-time intelligence regarding attest technological trends. It also has APIs that other recon tools like Nmap, Metasploit, Maltego, and FOCA use for analysis.
+
+For more details visit : https://www.shodan.io/
+
+--------------------------------------------
