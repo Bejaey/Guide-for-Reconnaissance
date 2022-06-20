@@ -177,4 +177,12 @@ $ sudo pip install --upgrade virtualenv
 
 Next, clone Recon-ng from Github.
 
-sudo git clone https://github.com/lanmaster53/recon-ng.git
+$ sudo git clone https://github.com/lanmaster53/recon-ng.git
+
+$ cd recon-ng
+
+$ sudo pip install –r REQUIREMENTS
+
+At this point the installation is complete and the application can be started from the current recon-ng directory.
+
+$ ./recon-ng
