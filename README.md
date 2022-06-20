@@ -488,7 +488,7 @@ In this module, we explored Open source intelligence and how to perform it using
 
 --------------------------------------------
 
-# DataSploit
+8) DataSploit
 
 DataSploit is an OSINT Framework which allows you to perform various recon techniques (on phone numbers, bitcoin addresses, people, companies, etc.), to aggregate all the raw data, and give data in multiple formats. If you are pentester, cybersecurity researcher or bug hunter, you’ll find DataSploit very useful OSINT framework. It brings all useful and effective OSINT tools and techniques in one place, correlates the raw data captured and gives you all the relevant information about the target’s domain/email/IP, etc.It is a simple way to dump data for a domain or other piece of metadata.
 
