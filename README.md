@@ -382,7 +382,6 @@ By default, Nmap displays the results of the scan in the standard output (stdout
 If you add the option -oN followed by a file name, then the output will be saved to the given file name.
 ![nmap-output-file-768x393](https://user-images.githubusercontent.com/106522935/174545126-3534b755-d03b-4223-8a14-2f1ed0ab38a8.png)
 Normal output to a file
-![nmap-resulted-normal-file](https://user-images.githubusercontent.com/106522935/174545280-921be676-a9b4-4b1a-a137-c9cc88211f72.png)
 
 The above command generates the following file:
 ![nmap-resulted-normal-file](https://user-images.githubusercontent.com/106522935/174545446-80ddf3e1-9888-4eea-8e1d-deb72a88fed4.png)
