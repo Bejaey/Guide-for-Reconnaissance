@@ -539,7 +539,11 @@ $ pip install datasploit
 $ python datasploit.py
 
 
+9) Aquatone
+
+![AQUATONE](https://user-images.githubusercontent.com/106522935/174574501-c7b55c2c-88e8-4812-8f2f-b0c17a76ee3f.png)
 
 
+Aquatone is a set of tools for performing reconnaissance on domain names. It can discover subdomains on a given domain by using open sources as well as the more common subdomain dictionary brute force approach. After subdomain discovery, AQUATONE can then scan the hosts for common web ports and HTTP headers, HTML bodies and screenshots can be gathered and consolidated into a report for easy analysis of the attack surface.
 
 
