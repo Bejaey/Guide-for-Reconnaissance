@@ -13,7 +13,7 @@ Reconnaissance, also known as the preparatory phase, is where the hacker gathers
 
 For every penetration tester, Google should be the first tool to use for continuous cyber recon. Google and other search engines like Bing are vital during reconnaissance because it provides vital data about individuals, companies, and data including leaked content. The obtained information is free and can help to determine the direction a penetration tester will take. 
 
-2) Maltego
+2) Maltego CE
 
 Maltego is a visual link analysis and data mining tool and it is the most famous software for performing Open Source Intelligence. It provides a library of plugins, called “transforms”, which are used to execute queries on open sources in order to gather information about a certain target and display them on a nice graph. In fact, differently from the command line tools seen until now, Maltego has a Graphical User Interface through which the user performs his research and analyzes results returned on the graph.
 
@@ -25,3 +25,8 @@ Before proceeding with the installation it is a good idea to register at this li
 
 If you are using Kali Linux, Maltego CE is already installed. Moreover you will find that Kali has its own custom version called Maltego Chlorine, which has been made on purpose for this distro.
 Otherwise you can download the package from https://www.paterva.com/web7/downloads.php#tab-3 and install it on your operating system (the software is available for Windows, Linux or Mac OSX).
+
+# Installation
+
+In Kali Linux, Maltego can be started by navigating in the applications menu by clicking on Applications > Information Gathering > maltegoce like shown in the following image:
+![maltego_start](https://user-images.githubusercontent.com/106522935/174518274-3dccd0c4-df61-4379-8b67-e261512472a8.png)
