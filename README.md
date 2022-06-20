@@ -11,6 +11,9 @@ Reconnaissance, also known as the preparatory phase, is where the hacker gathers
 
 1) Google
 
+![Screenshotfrom2019-01-1814-52-15-5c521dcf46e0fb0001c0de50](https://user-images.githubusercontent.com/106522935/174527027-12642810-cf76-46c2-b7cb-f9aaf29b5119.png)
+
+
 For every penetration tester, Google should be the first tool to use for continuous cyber recon. Google and other search engines like Bing are vital during reconnaissance because it provides vital data about individuals, companies, and data including leaked content. The obtained information is free and can help to determine the direction a penetration tester will take. 
 
 --------------------------------------------
@@ -154,6 +157,8 @@ As always, experiment with the transforms by yourself (there is a very good amou
 --------------------------------------------
 
 3)Recon-ng
+
+![rekon_ng_bg_cyber](https://user-images.githubusercontent.com/106522935/174526568-a026c582-4a05-4d4f-8a55-6c0e60d1c74d.jpg)
 
 Recon-ng is a full-featured Web Reconnaissance framework written in Python. Complete with independent modules, database interaction, built in convenience functions, interactive help, and command completion, Recon-ng provides a powerful environment in which open source web-based reconnaissance can be conducted quickly and thoroughly.
 
