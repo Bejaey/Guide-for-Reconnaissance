@@ -425,6 +425,9 @@ For further reading, you can refer to the official Nmap reference guide, and if 
 
 7) Spiderfoot
 
+![spiderfoot](https://user-images.githubusercontent.com/106522935/174564081-a45675d1-3b9f-4c08-928a-dad7bb01370d.png)
+
+
 This package contains an open source intelligence (OSINT) automation tool. Its goal is to automate the process of gathering intelligence about a given target, which may be an IP address, domain name, hostname, network subnet, ASN, e-mail address, person’s name, phone number, username.
 
 SpiderFoot can be used offensively, i.e. as part of a black-box penetration test to gather information about the target, or defensively to identify what information you or your organisation are freely providing for attackers to use against you.
@@ -452,3 +455,33 @@ $ sudo pip3 install -r requirements.txt
 Finally run the project using:
 
 $ sudo python3 sf.py -l 127.0.0.1:
+
+Voila! Now you can use it freely to perform your OSINT operation.
+
+There is another option which is using a ready-to-go Spiderfoot instance. To do it check this link: https://www.spiderfoot.net/hx/
+
+To start a new scan, click on " + Create a new scan"
+
+![image5](https://user-images.githubusercontent.com/106522935/174563931-f5a4244b-5cab-4ce1-9f32-42232d996c40.png)
+
+Enter your target and click on " Run scan now"
+
+![image9](https://user-images.githubusercontent.com/106522935/174564243-d0f34826-bf97-48df-81b4-03cc5a231bec.png)
+
+specific task. Spiderfoot comes with a long list of modules including:
+
+•abuse.ch: Checks if a host/domain, IP or netblock is malicious according to abuse.ch.
+
+•Accounts: Looks for possible associated accounts on nearly 200 websites like Ebay, Slashdot, reddit, etc.
+
+•AlienVault OTX: Obtains information from AlienVault Open Threat Exchange (OTX)
+
+The full list of modules can be found here: https://github.com/smicallef/spiderfoot
+
+The tool gives you the ability to investigate data too:
+
+![Screenshot_2020-03-01-SpiderFoot-HX1-1024x731](https://user-images.githubusercontent.com/106522935/174564785-1af62e4e-f6e1-4003-983b-2b7c85184cf6.png)
+
+# Summary
+
+In this module, we explored Open source intelligence and how to perform it using a powerful tool called "SpiderFoot"
