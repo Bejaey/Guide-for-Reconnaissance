@@ -219,3 +219,142 @@ Visit this sites 👉https://gbhackers.com/shoda-censys-internet/ to acess the u
 
 --------------------------------------------
 
+6) Nmap
+7) 
+ ![Uploading nmap-thumbnail.jpg…]()
+ 
+ Nmap is an open-source network mapping tool developed by Gordon Lyon. It is widely used as a port scanner and a host discovery tool by network administrators and hackers world-wide.
+
+The reason for its popularity is that it allows users to perform powerful scans using a combination of a small set of options. Using only these options, you can run effective and powerful scans by running specifically crafted commands.
+
+But even if you are not familiar with Nmap, you can still use it by executing simple commands. These will allow you to get a few good scan results. However, if you want your scans to be more accurate, then you need to learn more about Nmap and how to use it correctly.
+
+This is precisely what this post aims to do. In it, I tried to share with you the different ways to use Nmap.
+
+To fully understand the content of this post, you need to have a basic understanding of computer networks. You don’t need to be an expert, but you should at least understand the basic concepts like IP addresses, subnets, and TCP.
+
+With that being said, let’s go ahead and start.
+
+# What you’ll need
+
+Nmap is a command-line tool that works best on Linux. If you are a Linux user, then you can easily download Nmap using your distribution’s package manager (dpkg, rpm, pacman…). It should be available in all Linux repositories, so you won’t have a hard time installing it.
+
+If you have a pen-testing Linux distribution like Kali or Parrot, then Nmap should already be installed with your OS.
+
+For non-Linux users, you can download Nmap here, although I recommend that you switch to Linux if you want to take advantage of all the Linux-based hacking tools.
+
+During this post, we will be performing some of our tests on scanme.nmap.org. This is a test machine maintained by Nmap to help users learn and test their commands legally. You should make sure to not overwhelm this address with scans and only use it a few times a day. Alternatively, you can perform scans on your local network, provided, of course, that you have the proper rights to do so.
+
+# The most basic commands
+
+I think that we’ve had enough talk now, it is about time to perform our first scan.
+
+Here is the syntax for all Nmap commands :
+
+nmap [options] target
+
+The target can be a domain name, an IP address, a range of IP addresses, or a combination of all these elements.
+
+If you don’t specify options, then Nmap will perform a default port scan of the target.
+
+![nmap1](https://user-images.githubusercontent.com/106522935/174541602-7d7a1fb5-1480-4a9b-83c7-7b6b34ef26c3.png)
+
+Nmap Default Scan
+As you can see, we have obtained some interesting information from the target host by using this simple command:
+
+•Nmap does a DNS resolution and provides the IP address of the target.
+
+•We know that the host is up.
+
+•We have a list of all open ports and their corresponding service.
+
+Not bad for a default scan, don’t you think?
+
+# Host discovery
+
+If you want to test for open ports in your local network, scanning the entire IP address range might take a lot of time. In this case, you should start first with a host discovery phase in which you detect the available machines.
+
+For instance, if you had to scan the network associated with the IP address 192.168.1.1/24, and only three machines are available, then it wouldn’t make sense to test for open ports in every IP address in that range.
+
+This is where host discovery can be useful. It helps you focus your scanning efforts and, instead of 255 addresses, you will only scan the three addresses belonging to the available machines.
+
+To perform host discovery, simply add the -sn option.
+
+In the following test, I used Nmap to scan for available hosts in my local network.
+
+By providing 192.168.1.0-255 as the target, Nmap will scan all addresses ranging from 192.168.1.0 to 192.168.1.255.
+
+![nmap-host-discovery](https://user-images.githubusercontent.com/106522935/174541926-a5715b53-407b-4865-b705-13c8301e335c.png)
+
+Nmap – Host Discovery
+As shown in this output, Nmap detected 5 hosts that are connected to my network.
+
+This type of scan is also called a ping sweep.
+
+# Port Scanning
+
+When it comes to port scanning, Nmap offers numerous techniques that you can use.
+
+The reason for this is that firewall rules in the target host can sometimes deny certain types of packets used in port scanning. As a result, in some cases, only one technique will be effective in detecting open ports, while all others will fail.
+
+It is, therefore, important to have various types of scanning techniques that you can choose from and apply depending on the case.
+
+By default, Nmap scan for the first 1000 ports. If you want to specify the exact ports to test, you can use the option -p followed by a number (or a group of numbers separated by a comma, or even a range of ports separated by a hyphen).
+
+![nmap-ports-specification](https://user-images.githubusercontent.com/106522935/174542180-d3f38dcf-d5e0-4f01-83cd-d5b92d539461.png)
+Nmap Port Specification
+In this example, by using the -p option, the command limits the scan to ports 21, 22, 23, 53, 80, and 443.
+
+Please note that you would need to have privileged access to perform most of the following scans. If you are on Linux, you would need to run these commands as root, and if you are on Windows, make sure that you run Nmap as an administrator.
+
+# TCP SYN Scan
+
+This is the default scan type when you don’t provide an option. It consists of sending a SYN packet to the target machine and waiting for a response. If the target machine sends back a SYN/ACK packet, then the port is open.
+
+The testing host does not complete the three-way handshake. Once it receives the reply from the target host, it closes the connection before it is established. By doing so, the target machine will have a lower chance of detecting the scan. This is why this scanning technique is also known as Stealth Scan.
+
+To perform a TCP SYN Scan, you can use the option -sS
+![nmap-syn-scan](https://user-images.githubusercontent.com/106522935/174542361-8d035ae7-c49c-4fc9-b2a8-f1e5b7f21d6a.png)
+
+TCP SYN Scan
+As you can tell from the dash sign (#) in this command prompt, I switched to a superuser before running the command.
+
+Notice that some ports are shown to be filtered. What this means is that there is a filtering software or device (Like a firewall) that is blocking packets from reaching those ports.
+
+# TCP Connect Scan
+The TCP Connect scan consists of asking the operating system to establish a connection to the specified remote port through a connect system call.
+
+This technique does not require privileged access as opposed to other scanning techniques, and so, it can be useful when the user doesn’t have root access on the testing machine.
+
+To perform a TCP Connect Scan, you can simply use the -sT option.
+![nmap-tcp-connect-scan](https://user-images.githubusercontent.com/106522935/174542495-4eb3b2d7-8fd6-4fb6-9033-652e068c1aef.png)
+TCP Connect Scan
+
+# UDP Scan
+As its name implies, this scanning technique uses UDP protocol instead of TCP.
+
+Since UDP does not use a three-way handshake, a sent packet to an open port will not be acknowledged. However, when you send a UDP packet to a closed port, the target host will send back an ICMP port unreachable packet. Using this technique, Nmap can determine if a port is open or not.
+
+To perform a UDP scan, you can use the -sU option.
+![nmap-udp-scan](https://user-images.githubusercontent.com/106522935/174542629-79e4e167-b81f-4a25-bf76-0bfb68766c3a.png)
+UDP Scan
+
+# TCP Flag Scan
+In most systems, if you send a packet without a SYN, ACK, or RST flag, the target host will not respond if the port is open. However, if the port is closed, then it sends back an RST packet.
+
+You can determine which ports are open by sending packets not containing these three flags, but instead containing a combination of the other flags(FIN, URG, and PSH) or no flag at all (NULL).
+
+To perform this scanning technique, Nmap offers three options :
+
+-sN : NULL (All flag bits are equal to 0)
+![nmap-null-scan](https://user-images.githubusercontent.com/106522935/174542765-52680ff2-632b-460d-995e-e1596e80463a.png)
+TCP Null Scan
+-sF : FIN (Only the FIN bit is set to 1)
+![nmap-fin-scan](https://user-images.githubusercontent.com/106522935/174542856-53dd7829-5cbf-4ed4-bf0d-7019bf654522.png)
+
+TCP FIN Scan
+-sX : Xmas (URG, PSH and FIN bits are all set to 1)
+![nmap-xmas-scan](https://user-images.githubusercontent.com/106522935/174542941-b13975c8-2b90-43ed-8dc0-3110a034448e.png)
+TCP Xmas Scan
+
+# OS Identification
