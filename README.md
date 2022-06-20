@@ -220,7 +220,7 @@ Visit this sites 👉https://gbhackers.com/shoda-censys-internet/ to acess the u
 --------------------------------------------
 
 6) Nmap
-7) 
+
  ![Uploading nmap-thumbnail.jpg…]()
  
  Nmap is an open-source network mapping tool developed by Gordon Lyon. It is widely used as a port scanner and a host discovery tool by network administrators and hackers world-wide.
@@ -423,3 +423,32 @@ For further reading, you can refer to the official Nmap reference guide, and if 
 
 
 
+7) Spiderfoot
+
+This package contains an open source intelligence (OSINT) automation tool. Its goal is to automate the process of gathering intelligence about a given target, which may be an IP address, domain name, hostname, network subnet, ASN, e-mail address, person’s name, phone number, username.
+
+SpiderFoot can be used offensively, i.e. as part of a black-box penetration test to gather information about the target, or defensively to identify what information you or your organisation are freely providing for attackers to use against you.
+
+Now let's explore how to install Spiderfoot.
+
+# Installation 
+
+Install python3-pip:
+
+$ sudo apt-get install python3-pip
+
+Clone the project from its Github repository using git clone :
+
+$ git clone https://github.com/smicallef/spiderfoot.git
+
+Enter the project folder:
+
+$ cd spiderfoot
+
+Install the required libraries:
+
+$ sudo pip3 install -r requirements.txt
+
+Finally run the project using:
+
+$ sudo python3 sf.py -l 127.0.0.1:
