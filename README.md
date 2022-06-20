@@ -161,4 +161,20 @@ Recon-ng has a look and feel similar to the Metasploit Framework, reducing the l
  
 # Installation
 
+Recon-ng is pre-installed in Kali Linux. But if you want to use it in another Linux distribution, the installation process is quite easy.
 
+>>> Commands
+
+$ sudo apt-get update && sudo apt-get upgrade
+
+$ sudo apt-get install git
+
+$ sudo apt-get install python-pip python-dev build-essential
+
+$ sudo pip install --upgrade pip
+
+$ sudo pip install --upgrade virtualenv
+
+Next, clone Recon-ng from Github.
+
+sudo git clone https://github.com/lanmaster53/recon-ng.git
