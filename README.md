@@ -490,6 +490,9 @@ In this module, we explored Open source intelligence and how to perform it using
 
 8) DataSploit
 
+![Datasploit](https://user-images.githubusercontent.com/106522935/174572614-55d8e05a-cf34-4642-a37a-8a894e23cae5.png)
+
+
 DataSploit is an OSINT Framework which allows you to perform various recon techniques (on phone numbers, bitcoin addresses, people, companies, etc.), to aggregate all the raw data, and give data in multiple formats. If you are pentester, cybersecurity researcher or bug hunter, you’ll find DataSploit very useful OSINT framework. It brings all useful and effective OSINT tools and techniques in one place, correlates the raw data captured and gives you all the relevant information about the target’s domain/email/IP, etc.It is a simple way to dump data for a domain or other piece of metadata.
 
 
@@ -514,6 +517,34 @@ DataSploit is an OSINT Framework which allows you to perform various recon techn
 •Generates HTML, along with text files.
 
 
+# Installation
+
+
+$ git clone https://github.com/datasploit/datasploit 
+
+$ cd datasploit
+
+Then install all python libraries (requirements.txt) via pip:
+
+$ pip install -r requirements.txt
+
+Kali Linux users: install the requirements using the following command:
+
+ $ pip install --upgrade --force-reinstall -r requirements.txt 
+ 
+And rename sample-config.py file:
+
+$ mv sample-config.py config.py
+
+Installation as a Library
+
+Install DataSploit using pip (this command will install all the dependencies:
+
+$ pip install datasploit
+
+Once dataSploit is installed successfully, go and edit the config file to add your own API keys:
+
+$ datasploit_config
 
 
 
