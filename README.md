@@ -95,3 +95,54 @@ The same transforms can also be found by looking inside the following four group
 •Files and Documents from Domain.
 
 ![maltego_transforms](https://user-images.githubusercontent.com/106522935/174519337-00a7637e-243e-4132-9403-9973982b0bd0.png)
+
+We can start by running the transform DNS from Domain > DomainToDNSNameSchema which tries various name schema’s against the object domain; once the disclaimer is accepted, we can run the transform:
+
+![maltego_DomainToDNSNameSchema](https://user-images.githubusercontent.com/106522935/174519646-af973017-7644-4c52-bc77-5a5259f93523.png)
+
+The execution of the transform can be verified in the “Output - Transform Output” panel: as reported, the tool searches for subdomains using lists of common names which are loaded on Paterva servers as files with extension “.bfdns”.
+We can see that the graph is populated with subdomains found by the search; it is possible to switch from the Main View to the Bubble View or to the Entity List by simply clicking on the respective buttons on the top of the graph.
+There is also the chance to change the layout mode by clicking on the icons on the upper part of the graph window; the default one is called “Block”.
+Note that entities belonging to the same category are represented by circles of the same color in the Overview panel.
+
+Suppose we want to find the IP address for a certain subdomain, then we right click on the object and run Resolve to IP; we can even select multiple objects using the “Shift” button and apply the transform to all of them:
+
+![maltego_ResolveToIP](https://user-images.githubusercontent.com/106522935/174519711-485669da-ca4b-456d-8506-a5360c20f38a.png)
+
+
+Once we have the IP addresses we can run a further transform that returns the geolocation for that IP; just right click on the object, then IP owner detail > toLocation and run it by clicking on the yellow arrow:
+
+![maltego_ToLocation](https://user-images.githubusercontent.com/106522935/174519761-247ca855-b13e-4860-b7db-75a7184d8d7c.png)
+
+The transform group “IP owner detail” is also really useful to find informations like email addresses, entities (person names) and phone numbers, so it is a good idea to take a look at the others transforms inside it.
+
+Now suppose we want to check, in a passive way, which websites are associated to the target domain: DNS from Domain > To Website DNS [using Search Engines] is the transform we want to use. We can also choose which search engine we want to launch the query against (default is Bing); this can be done by clicking on the “Configure” icon near the yellow arrow key:
+![maltego_configure](https://user-images.githubusercontent.com/106522935/174519825-a6b2b22c-212f-4a93-81ba-c835e73f61b7.png)
+
+In this configuration menu there are also reported all the other transforms loaded in Maltego with their Status, Transform Server Location, Default Set, Input and Output informations.
+Keep in mind that some transforms are more invasive than others: for example, it is possible to discover websites querying directly port 80 using the transform To Web site [Query port 80].
+
+This is the resulting graph with a focus on the websites:
+
+![maltego_ToWebsite](https://user-images.githubusercontent.com/106522935/174519996-99600215-578e-4dde-bca7-5386de84a704.png)
+
+
+Note how Maltego automatically organizes nodes on the graph.
+
+A really useful transform which can be applied to Website objects is ToServerTechnologiesWebsite; using the BuiltWith.com API it is able to retrieve informations about the technologies running on the target website:
+
+![maltego_ToServerTechnologiesWebsite](https://user-images.githubusercontent.com/106522935/174520037-f547586a-c2f8-40d9-91e4-f4bf086b9c68.png)
+
+If you think the graph is becoming heavy, it is possible to remove unwanted nodes by selecting them and pressing the “Canc” button.
+Another interesting transform is the one named Files and Documents from Domain: this will search for files and documents inside the given domain with the extensions reported in the configuration menu; by clicking on the node representing a file we can get informations about the query used to find it with the document download link.
+
+![maltego_ToFiles](https://user-images.githubusercontent.com/106522935/174520095-dcff9822-c07d-42c6-91b4-992ad11f9a9e.png)
+
+The following step could be to find email addresses related to the target domain by using Email addresses from Domain transform on the “Domain” object; then we could run To Person transform on the “Email” object to get person identity related to that email address or To Phone number [using Search Engine] transform to try a phone number discovery.
+
+Like seen before, another way to proceed is to use predefined search machines which are configured to run with a more or less invasive approach against the target; be aware that you can create your own machine so as to exactly perform the queries you need and nothing more.
+
+
+
+
+
