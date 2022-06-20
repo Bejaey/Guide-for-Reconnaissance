@@ -48,5 +48,32 @@ At the final screen we get the correct initialization message with different pos
 
 ![maltego_ready](https://user-images.githubusercontent.com/106522935/174518705-a1051939-9f41-48cf-ab17-cd492173d4b8.png)
 
+“Run a machine” allows you to run predefined searches, called “machines”: for example, the “Company Stalker” machine gets all email addresses it can find on the web for a certain domain and look for related account on social networks; it also gets documents and extract metadata from them.
+Since we want to perform a custom search we need to select “Open a blank graph and let me play around” and then click on “Finish”. This action opens a new empty graph where we can start a new OSINT activity:
 
+![maltego_new](https://user-images.githubusercontent.com/106522935/174518833-8cae6eb6-ca05-4914-b7b3-e010caff4154.png)
+
+We could have also opened a new graph by simply clicking on Maltego icon on the top left choosing “New”.
+As the image shows, on the top part we have six tabs:
+
+•Investigate - offers options to quickly search through the graph or to select entities;
+•Manage - allows to import/export configurations, manage entities and transforms;
+•View - allows to choose which panels are active;
+•Organize - sets the node layout mode and the alignment type;
+•Machines - allows to run, stop, create and manage machines;
+•Collaboration - offers options to share projects and results.
+
+There is a big central window which is where the graph will be developed and on the tab it is reported the name of the graph (you can save the project and give it a proper name).
+On the left side we have the “Palette” panel which contains the following categories:
+
+•Devices - adds a node such as a phone or camera;
+•Infrastructure - adds a node such as a domain, MX record or Website;
+•Locations - adds a node such as a GPS coordinate or location name;
+•Malware - adds a node as hash entity;
+•Penetration Testing - adds a node which identifies a technology;
+•Personal - adds a node such as a document, email address or person name;
+•Social Network - adds a node related to social networks like Facebook or Twitter.
+Each of them contains objects related to that category: these items can be dragged on the graph and, once placed there, it is possible to use them as starting point for a search activity. This can be done thanks to the application of transforms.
+
+As done in the previous Information Gathering posts, we can use as target the National Institute of Standards and Technology (NIST). We can start by clicking on “Infrastructure” and dragging on the graph a “Domain” object; by double clicking on it we can change its name into “nist.gov”:
 
