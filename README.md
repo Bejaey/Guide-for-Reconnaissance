@@ -531,20 +531,14 @@ $ pip install -r requirements.txt
 Kali Linux users: install the requirements using the following command:
 
  $ pip install --upgrade --force-reinstall -r requirements.txt 
- 
-And rename sample-config.py file:
-
-$ mv sample-config.py config.py
-
-Installation as a Library
 
 Install DataSploit using pip (this command will install all the dependencies:
 
 $ pip install datasploit
 
-Once dataSploit is installed successfully, go and edit the config file to add your own API keys:
+$ python datasploit.py
 
-$ datasploit_config
+
 
 
 
