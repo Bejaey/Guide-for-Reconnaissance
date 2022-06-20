@@ -188,3 +188,6 @@ At this point the installation is complete and the application can be started fr
 $ ./recon-ng
 
 ![rekon_ng_bg_cyber](https://user-images.githubusercontent.com/106522935/174526568-a026c582-4a05-4d4f-8a55-6c0e60d1c74d.jpg)
+
+NOTE: If you are using Kali Linux you can start the application manually by typing recon-ng in your terminal or from the Information Gathering module which is present on the Applications tab.
+
