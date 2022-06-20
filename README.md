@@ -544,6 +544,24 @@ $ python datasploit.py
 ![AQUATONE](https://user-images.githubusercontent.com/106522935/174574501-c7b55c2c-88e8-4812-8f2f-b0c17a76ee3f.png)
 
 
-Aquatone is a set of tools for performing reconnaissance on domain names. It can discover subdomains on a given domain by using open sources as well as the more common subdomain dictionary brute force approach. After subdomain discovery, AQUATONE can then scan the hosts for common web ports and HTTP headers, HTML bodies and screenshots can be gathered and consolidated into a report for easy analysis of the attack surface.
+Aquatone is a set of tools for performing reconnaissance on domain names. It can discover subdomains on a given domain by using open sources as well as the more common subdomain dictionary brute force approach. After subdomain discovery, Aquatone can then scan the hosts for common web ports and HTTP headers, HTML bodies and screenshots can be gathered and consolidated into a report for easy analysis of the attack surface.
+
+# Instructions to Install Aquatone on Kali Linux
+
+▶ Requirement : Google Chrome or Chromium Browser (Chromium is recommended)
+
+▶ Download the latest release of Aquatone : https://github.com/michenriksen/aquatone/releases/
+
+▶ Run : unzip aquatone_filename.zip (example : unzip aquatone_linux_amd64_1.7.0.zip)
+
+▶ Run : mv aquatone /usr/bin/
+
+▶ Run (Check) : aquatone -version
+
+▶ Run (Check/Usage) : cat list.txt | aquatone [list.txt contains the list of domains]
+
+▶ View : Open file manage, point to the html report of aquatone and open it with any browser.
+
+▶ More Info : https://github.com/michenriksen/aquatone
 
 
