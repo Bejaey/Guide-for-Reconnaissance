@@ -488,4 +488,33 @@ In this module, we explored Open source intelligence and how to perform it using
 
 --------------------------------------------
 
+# DataSploit
+
+DataSploit is an OSINT Framework which allows you to perform various recon techniques (on phone numbers, bitcoin addresses, people, companies, etc.), to aggregate all the raw data, and give data in multiple formats. If you are pentester, cybersecurity researcher or bug hunter, you’ll find DataSploit very useful OSINT framework. It brings all useful and effective OSINT tools and techniques in one place, correlates the raw data captured and gives you all the relevant information about the target’s domain/email/IP, etc.It is a simple way to dump data for a domain or other piece of metadata.
+
+
+# Features:
+
+•Performs automated OSINT on a domain / email / username / IP and find out relevant information from different sources.
+
+•Easy to contribute OSINT Framework.
+
+•Code for Banner, Main and Output function. Datasploit automagically do rest of the things for you.
+
+•Useful for Pen-testers, Bug Bounty Hunters, Cyber Investigators, Product companies, Security Engineers, etc.
+
+•Collaborate the results, show them in a consolidated manner.
+
+•Tries to find out credentials, api-keys, tokens, subdomains, domain history, legacy portals, usernames, dumped accounts, etc. related to the target.
+
+•Can be used as library, automated scripts or standalone scripts.
+
+•Can generate lists which can be feeded to active scan tools.
+
+•Generates HTML, along with text files.
+
+
+
+
+
 
