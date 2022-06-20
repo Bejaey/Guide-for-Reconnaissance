@@ -302,7 +302,9 @@ It is, therefore, important to have various types of scanning techniques that yo
 By default, Nmap scan for the first 1000 ports. If you want to specify the exact ports to test, you can use the option -p followed by a number (or a group of numbers separated by a comma, or even a range of ports separated by a hyphen).
 
 ![nmap-ports-specification](https://user-images.githubusercontent.com/106522935/174542180-d3f38dcf-d5e0-4f01-83cd-d5b92d539461.png)
+
 Nmap Port Specification
+
 In this example, by using the -p option, the command limits the scan to ports 21, 22, 23, 53, 80, and 443.
 
 Please note that you would need to have privileged access to perform most of the following scans. If you are on Linux, you would need to run these commands as root, and if you are on Windows, make sure that you run Nmap as an administrator.
