@@ -77,3 +77,21 @@ Each of them contains objects related to that category: these items can be dragg
 
 As done in the previous Information Gathering posts, we can use as target the National Institute of Standards and Technology (NIST). We can start by clicking on “Infrastructure” and dragging on the graph a “Domain” object; by double clicking on it we can change its name into “nist.gov”:
 
+![maltego_nist (1)](https://user-images.githubusercontent.com/106522935/174519199-a30a3f62-43d8-4921-8d51-d739405308d4.png)
+
+Now informations are displayed also in the other four panels:
+
+•Run View - contains Transforms and Machines that it is possible to run against the selected object;
+•Overview - shows a schematic graph where nodes are represented by colored circles;
+•Detail View - displays informations about the selected object;
+•Property View - shows properties regarding the selected object.
+
+To run a transform on the object we can either access them through the “Run View” panel or by simply clicking on the object with the right mouse button. “All Transforms” contains all the possible transforms we can apply to that object type, which in this case is a Domain object.
+The same transforms can also be found by looking inside the following four groups (of course they vary depending on the object type):
+
+•DNS from Domain;
+•Domain owner detail;
+•Email addresses from Domain;
+•Files and Documents from Domain.
+
+![maltego_transforms](https://user-images.githubusercontent.com/106522935/174519337-00a7637e-243e-4132-9403-9973982b0bd0.png)
