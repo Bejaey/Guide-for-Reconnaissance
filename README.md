@@ -565,6 +565,8 @@ Aquatone is a set of tools for performing reconnaissance on domain names. It can
 
 ▶ More Info : https://github.com/michenriksen/aquatone
 
+For more details : https://www.google.com/amp/s/www.geeksforgeeks.org/aquatone-tool-for-domain-flyovers/amp/
 
 -------------------------------------------
+
 
