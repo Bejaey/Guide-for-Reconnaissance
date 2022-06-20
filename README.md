@@ -538,6 +538,7 @@ $ pip install datasploit
 
 $ python datasploit.py
 
+-------------------------------------------
 
 9) Aquatone
 
@@ -564,4 +565,6 @@ Aquatone is a set of tools for performing reconnaissance on domain names. It can
 
 ▶ More Info : https://github.com/michenriksen/aquatone
 
+
+-------------------------------------------
 
