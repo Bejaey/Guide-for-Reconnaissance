@@ -579,6 +579,7 @@ This tool maintains a strong focus on DNS, HTTP and SSL/TLS data discovering and
 
 It also uses different web archiving engines to scrape the bottom of the internet’s forgotten data deposits.
 
-
 More info : https://github.com/OWASP/Amass
+
+For begineers guide : https://securitytrails.com/blog/owasp-amass
 
