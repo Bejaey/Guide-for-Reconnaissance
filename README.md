@@ -168,7 +168,7 @@ Recon-ng has a look and feel similar to the Metasploit Framework, reducing the l
 
 Recon-ng is pre-installed in Kali Linux. But if you want to use it in another Linux distribution, the installation process is quite easy.
 
->>> Commands
+👉 Commands
 
 $ sudo apt-get update && sudo apt-get upgrade
 
