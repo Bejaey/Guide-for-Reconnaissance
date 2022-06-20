@@ -238,12 +238,17 @@ With that being said, let’s go ahead and start.
 # Installation
 
 $ sudo apt-get install nmap
+
 or
+
 $ sudo apt install nmap
 
 $ git clone https://github.com/nmap/nmap.git
+
 $ ./configure
+
 $ make
+
 $ make install
 
 # What you’ll need
