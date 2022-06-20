@@ -142,7 +142,12 @@ The following step could be to find email addresses related to the target domain
 
 Like seen before, another way to proceed is to use predefined search machines which are configured to run with a more or less invasive approach against the target; be aware that you can create your own machine so as to exactly perform the queries you need and nothing more.
 
+You can even create your own transforms: http://dev.paterva.com/developer/getting_started/building_your_own_tds_transform.php.
 
+# Conclusions
+
+Maltego is a powerful graphical tool for OSINT and it can be customized depending on your own needs. Since it generates graphs it gives a rapid overview of the target structure, differently from command line tools. This is why it is always important to work with more than one tool so as to have a better picture of the target.
+As always, experiment with the transforms by yourself (there is a very good amount of them) to make the most of Maltego potential.
 
 
 
