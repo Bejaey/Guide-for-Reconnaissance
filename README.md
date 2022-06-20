@@ -208,3 +208,14 @@ Shodan is among the first search engines for internet-connected devices. With se
 For more details visit : https://www.shodan.io/
 
 --------------------------------------------
+
+5) Censys
+
+![introducing-search2](https://user-images.githubusercontent.com/106522935/174530506-ec3a10ae-a76f-4a6f-9334-19b4d72abfa2.gif)
+
+
+Censys provides an avenue to gather data regarding all your assets to help you prevent target attacks. This tool provides actionable insights and helps you track changes in all your assets and identify potential vulnerabilities. 
+Visit this sites 👉https://gbhackers.com/shoda-censys-internet/ to acess the user guides.
+
+--------------------------------------------
+
