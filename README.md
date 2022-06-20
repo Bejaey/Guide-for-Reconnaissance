@@ -235,6 +235,17 @@ To fully understand the content of this post, you need to have a basic understan
 
 With that being said, let’s go ahead and start.
 
+# Installation
+
+$ sudo apt-get install nmap
+or
+$ sudo apt install nmap
+
+$ git clone https://github.com/nmap/nmap.git
+$ ./configure
+$ make
+$ make install
+
 # What you’ll need
 
 Nmap is a command-line tool that works best on Linux. If you are a Linux user, then you can easily download Nmap using your distribution’s package manager (dpkg, rpm, pacman…). It should be available in all Linux repositories, so you won’t have a hard time installing it.
