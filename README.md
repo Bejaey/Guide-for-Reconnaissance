@@ -331,12 +331,14 @@ To perform a TCP Connect Scan, you can simply use the -sT option.
 TCP Connect Scan
 
 # UDP Scan
+
 As its name implies, this scanning technique uses UDP protocol instead of TCP.
 
 Since UDP does not use a three-way handshake, a sent packet to an open port will not be acknowledged. However, when you send a UDP packet to a closed port, the target host will send back an ICMP port unreachable packet. Using this technique, Nmap can determine if a port is open or not.
 
 To perform a UDP scan, you can use the -sU option.
-![nmap-udp-scan](https://user-images.githubusercontent.com/106522935/174542629-79e4e167-b81f-4a25-bf76-0bfb68766c3a.png)
+
+![nmap-udp-scan (1)](https://user-images.githubusercontent.com/106522935/174543833-b130ad11-e9e9-41f1-92dc-6ae915cf57a0.png)
 UDP Scan
 
 # TCP Flag Scan
@@ -347,17 +349,17 @@ You can determine which ports are open by sending packets not containing these t
 To perform this scanning technique, Nmap offers three options :
 
 -sN : NULL (All flag bits are equal to 0)
-![nmap-null-scan]
-(https://user-images.githubusercontent.com/106522935/174542765-52680ff2-632b-460d-995e-e1596e80463a.png)
+![nmap-null-scan (1)](https://user-images.githubusercontent.com/106522935/174543968-07bab2c3-561d-4051-92a2-eaa0e0f99c0b.png)
 TCP Null Scan
--sF : FIN (Only the FIN bit is set to 1)
-![nmap-fin-scan]
-(https://user-images.githubusercontent.com/106522935/174542856-53dd7829-5cbf-4ed4-bf0d-7019bf654522.png)
 
+-sF : FIN (Only the FIN bit is set to 1)
+
+![nmap-fin-scan (1)](https://user-images.githubusercontent.com/106522935/174544074-607fa3c5-a1cb-48b7-bbbb-a7cbbe3dae50.png)
 TCP FIN Scan
+
 -sX : Xmas (URG, PSH and FIN bits are all set to 1)
-![nmap-xmas-scan]
-(https://user-images.githubusercontent.com/106522935/174542941-b13975c8-2b90-43ed-8dc0-3110a034448e.png)
+![nmap-xmas-scan (1)](https://user-images.githubusercontent.com/106522935/174544176-349c7821-508a-4f6e-abcf-1beb00867d93.png)
 TCP Xmas Scan
 
 # OS Identification
+
