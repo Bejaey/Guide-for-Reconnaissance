@@ -565,8 +565,20 @@ Aquatone is a set of tools for performing reconnaissance on domain names. It can
 
 ▶ More Info : https://github.com/michenriksen/aquatone
 
-For more details : https://www.google.com/amp/s/www.geeksforgeeks.org/aquatone-tool-for-domain-flyovers/amp/
+For begineers guide : https://www.google.com/amp/s/www.geeksforgeeks.org/aquatone-tool-for-domain-flyovers/amp/
 
 -------------------------------------------
 
+10) Amass
+
+![image-28-768x365](https://user-images.githubusercontent.com/106522935/174582270-b3114c40-afac-4c55-bd72-da65aa844c29.png)
+
+Amass is an open source network mapping and attack surface discovery tool that uses information gathering and other techniques such as active reconnaissance and external asset discovery to scrap all the available data. In order to accomplish this, it uses its own internal machinery and it also integrates smoothly with different external services to increase its results, efficiency and power.
+
+This tool maintains a strong focus on DNS, HTTP and SSL/TLS data discovering and scrapping. To do this, it has its own techniques and provides several integrations with different API services like (spoiler alert!) the SecurityTrails API.
+
+It also uses different web archiving engines to scrape the bottom of the internet’s forgotten data deposits.
+
+
+More info : https://github.com/OWASP/Amass
 
