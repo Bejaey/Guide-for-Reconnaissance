@@ -29,4 +29,24 @@ Otherwise you can download the package from https://www.paterva.com/web7/downloa
 # Installation
 
 In Kali Linux, Maltego can be started by navigating in the applications menu by clicking on Applications > Information Gathering > maltegoce like shown in the following image:
+
 ![maltego_start](https://user-images.githubusercontent.com/106522935/174518274-3dccd0c4-df61-4379-8b67-e261512472a8.png)
+
+Same thing can be done by clicking on the “Show application” menu:
+
+![maltego_start2](https://user-images.githubusercontent.com/106522935/174518568-b5ffe9e3-bafa-43a7-a23e-eab9a882cc9e.png)
+
+Maltego can also be started by opening the Terminal and typing maltegoce, but since it is not a command line tool, this is not the best choice.
+
+At the start up, after all the modules are correctly loaded, we get prompted with the Startup Wizard which asks for Maltego account credentials:
+
+![maltego_account](https://user-images.githubusercontent.com/106522935/174518641-b091eb7d-a44f-46bd-a8b7-9625b0f13104.png)
+
+
+If you have inserted them and correctly solved the captcha, you will get a welcome message and the information about the validity of the API key. At the next prompt just leave “Install Transforms from Maltego public servers” which will install the transforms on the client.
+At the final screen we get the correct initialization message with different possibilities for starting to use Maltego:
+
+![maltego_ready](https://user-images.githubusercontent.com/106522935/174518705-a1051939-9f41-48cf-ab17-cd492173d4b8.png)
+
+
+
