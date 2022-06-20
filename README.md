@@ -421,7 +421,7 @@ Of course, Nmap supports other options that we didn’t cover in this post. In f
 
 For further reading, you can refer to the official Nmap reference guide, and if you ever need help while typing a command, just type in the following command: nmap – -help.
 
-
+--------------------------------------------
 
 7) Spiderfoot
 
@@ -485,3 +485,7 @@ The tool gives you the ability to investigate data too:
 # Summary
 
 In this module, we explored Open source intelligence and how to perform it using a powerful tool called "SpiderFoot"
+
+--------------------------------------------
+
+
