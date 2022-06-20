@@ -347,14 +347,17 @@ You can determine which ports are open by sending packets not containing these t
 To perform this scanning technique, Nmap offers three options :
 
 -sN : NULL (All flag bits are equal to 0)
-![nmap-null-scan](https://user-images.githubusercontent.com/106522935/174542765-52680ff2-632b-460d-995e-e1596e80463a.png)
+![nmap-null-scan]
+(https://user-images.githubusercontent.com/106522935/174542765-52680ff2-632b-460d-995e-e1596e80463a.png)
 TCP Null Scan
 -sF : FIN (Only the FIN bit is set to 1)
-![nmap-fin-scan](https://user-images.githubusercontent.com/106522935/174542856-53dd7829-5cbf-4ed4-bf0d-7019bf654522.png)
+![nmap-fin-scan]
+(https://user-images.githubusercontent.com/106522935/174542856-53dd7829-5cbf-4ed4-bf0d-7019bf654522.png)
 
 TCP FIN Scan
 -sX : Xmas (URG, PSH and FIN bits are all set to 1)
-![nmap-xmas-scan](https://user-images.githubusercontent.com/106522935/174542941-b13975c8-2b90-43ed-8dc0-3110a034448e.png)
+![nmap-xmas-scan]
+(https://user-images.githubusercontent.com/106522935/174542941-b13975c8-2b90-43ed-8dc0-3110a034448e.png)
 TCP Xmas Scan
 
 # OS Identification
